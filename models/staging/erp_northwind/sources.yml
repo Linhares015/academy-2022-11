@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: erp
+    description: Banco de replica do ERP  
+    schema: erp_northwind   
+    tables:
+      - name: orders
+        description: Uma linha por pedido. Inclui pedido cancelados.
+        columns: 
+          - name: order_id
+            description: chave primaria da tabela de ordens.
+            tests:
+              - unique
+              - not_null
+
+      - name: products
+      
+      - name: categories
+      
+      - name: suppliers
+       
