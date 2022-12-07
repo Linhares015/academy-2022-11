@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: dim_produtos
+    description: Dimensão com informação de produtos categorias e fornecedores.
+    columns:
+       - name: sk_produto
+         description: e a primary key da dimensão produtos
+         tests:
+          - unique
+          - not_null
