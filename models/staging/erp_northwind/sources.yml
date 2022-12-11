@@ -21,4 +21,9 @@ sources:
       - name: suppliers
 
       - name: shippers
-       
+
+      - name: employees
+
+      - name: customers
+
+      - name: order_details
