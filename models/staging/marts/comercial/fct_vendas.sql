@@ -26,7 +26,8 @@ with
 
     , joined as (
         select
-        pedido_item.id_pedido			
+            id_pedido || '-' || sk_produto as sk_venda
+            , pedido_item.id_pedido			
             , clientes.sk_cliente as fk_cliente
             , funcionarios.sk_funcionario as fk_funcionarios	
             , pedido_item.data_do_pedido			
